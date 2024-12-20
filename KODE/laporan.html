@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Analisis WhatsApp Group</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laporan Analisis Konten WhatsApp Group</h1>
+    <h2>Nama    :Faizal Dwi Saputra</h2>
+    <h2>Nim     :L200220257</h2>
+
+    <h2>Pendahuluan</h2>
+    <p>Analisis ini dilakukan untuk mengelompokkan pesan dari grup WhatsApp berdasarkan isi pesan. Data terdiri dari log pesan yang diekspor dari beberapa grup WhatsApp, yang dianalisis menggunakan teknik <i>clustering</i>.</p>
+
+    <h2>Proses Analisis</h2>
+    <ol>
+        <li><b>Preprocessing:</b> Data teks diubah menjadi representasi numerik menggunakan TF-IDF.</li>
+        <li><b>Clustering:</b> Pesan dikelompokkan menjadi 3, 4, dan 5 cluster menggunakan algoritma k-Means.</li>
+    </ol>
+
+    <h2>Hasil Clustering</h2>
+    <h3>3 Cluster</h3>
+    <table>
+        <tr>
+            <th>Cluster</th>
+            <th>Kata Kunci</th>
+        </tr>
+        <tr>
+            <td>Cluster 0</td>
+            <td>yang, kami, akan</td>
+        </tr>
+        <tr>
+            <td>Cluster 1</td>
+            <td>disertakan, media, tidak</td>
+        </tr>
+        <tr>
+            <td>Cluster 2</td>
+            <td>pesan, dihapus, ini</td>
+        </tr>
+    </table>
+
+    <h3>4 Cluster</h3>
+    <table>
+        <tr>
+            <th>Cluster</th>
+            <th>Kata Kunci</th>
+        </tr>
+        <tr>
+            <td>Cluster 0</td>
+            <td>pesan, dihapus, ini</td>
+        </tr>
+        <tr>
+            <td>Cluster 1</td>
+            <td>kami, akan, kalian</td>
+        </tr>
+        <tr>
+            <td>Cluster 2</td>
+            <td>disertakan, media, tidak</td>
+        </tr>
+        <tr>
+            <td>Cluster 3</td>
+            <td>dana, sekarang, kaget</td>
+        </tr>
+    </table>
+
+    <h3>5 Cluster</h3>
+    <table>
+        <tr>
+            <th>Cluster</th>
+            <th>Kata Kunci</th>
+        </tr>
+        <tr>
+            <td>Cluster 0</td>
+            <td>kami, akan, kalian</td>
+        </tr>
+        <tr>
+            <td>Cluster 1</td>
+            <td>dana, sekarang, kaget</td>
+        </tr>
+        <tr>
+            <td>Cluster 2</td>
+            <td>pesan, dihapus, ini</td>
+        </tr>
+        <tr>
+            <td>Cluster 3</td>
+            <td>disertakan, media, tidak</td>
+        </tr>
+        <tr>
+            <td>Cluster 4</td>
+            <td>𝗖𝗹𝗮𝗶𝗺, 𝗕𝘂𝗿𝘂𝗮𝗻, beasiswa</td>
+        </tr>
+    </table>
+    <h1>Hasil Cluster berbentuk gambar</h1>
+    <img src="./img/3.png" alt="">
+    <h2>Kesimpulan</h2>
+    <p>Clustering berhasil mengelompokkan pesan ke dalam 3 hingga 5 cluster. Setiap cluster memiliki kata kunci yang mencerminkan tema utama dari pesan. Analisis ini dapat membantu memahami topik dominan dalam grup WhatsApp.</p>
+</body>
+</html>
