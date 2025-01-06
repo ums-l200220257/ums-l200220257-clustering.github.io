@@ -50,4 +50,7 @@ for n in [3, 4, 5]:
     results[n] = keywords
 
 # Display the top keywords for each clustering result
-results
+for n, keywords in results.items():
+    print(f"Top keywords for {n} clusters:")
+    for cluster_idx, words in enumerate(keywords):
+        print(f"  Cluster {cluster_idx}: {', '.join(words)}")
